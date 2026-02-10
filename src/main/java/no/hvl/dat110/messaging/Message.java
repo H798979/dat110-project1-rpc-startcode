@@ -5,6 +5,12 @@ import no.hvl.dat110.TODO;
 public class Message {
 
 	// the up to 127 bytes of data (payload) that a message can hold
+
+	if(data.length < 128 && data != null) {
+		this.data = data; 
+	} else {
+		this.data = null;
+	}
 	private byte[] data;
 
 	// construction a Message with the data provided

@@ -36,34 +36,46 @@ public class MessageConnection {
 
 		byte[] data;
 		
-		// TODO - START
-		// encapsulate the data contained in the Message and write to the output stream
+		data = MessageUtils.encapsulate(message);		//pakkar skilaboðunum i segment
+
+		try {
+
+			outStream.write(data);						//sendir gögnin út 
+			outStream.flush();							// tryggir að þau fari straks 
+
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
 		
 		if (true)
 			throw new UnsupportedOperationException(TODO.method());
-			
-		// TODO - END
 
 	}
 
 	public Message receive() {
 
 		Message message = null;
-		byte[] data;
+		byte[] data = new byte[MessageUtils.SEGMENTSIZE];
 		
-		// TODO - START
-		// read a segment from the input stream and decapsulate data into a Message
+		try {
+
+			inStream.readFully(data);						//tökum inn dataið fra skilaboðunum
+
+			message = MessageUtils.decapsulate(data);		//pökkum upp gögnunum 
+
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+
 		
 		if (true)
 			throw new UnsupportedOperationException(TODO.method());
 		
-		// TODO - END
-		
+
 		return message;
 		
 	}
-
-	// close the connection by closing streams and the underlying socket	
+	
 	public void close() {
 
 		try {
