@@ -4,7 +4,7 @@ package no.hvl.dat110.messaging;
 import java.net.Socket;
 import java.io.IOException;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 
 public class MessagingClient {
 
@@ -42,8 +42,7 @@ public class MessagingClient {
 		} 
 
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		return connection;

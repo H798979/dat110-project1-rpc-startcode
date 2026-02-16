@@ -1,6 +1,6 @@
 package no.hvl.dat110.rpc;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 import no.hvl.dat110.messaging.*;
 
 public class RPCClient {
@@ -21,12 +21,10 @@ public class RPCClient {
 		// TODO - START-
 		// connect using the RPC client
 		
-			public void connect() {
 		
 			connection = msgclient.connect();
 
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 	}
@@ -40,8 +38,7 @@ public class RPCClient {
 			connection.close();
 		}
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 	}
@@ -82,8 +79,7 @@ public class RPCClient {
 
 
 				
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		return returnval;

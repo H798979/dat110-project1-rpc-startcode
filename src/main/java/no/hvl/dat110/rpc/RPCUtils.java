@@ -2,7 +2,7 @@ package no.hvl.dat110.rpc;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 
 public class RPCUtils {
 	
@@ -29,8 +29,7 @@ public class RPCUtils {
 			}
 		} 
 
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		
@@ -56,8 +55,7 @@ public class RPCUtils {
 			}
 		}
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		
@@ -79,8 +77,7 @@ public class RPCUtils {
 			encoded = str.getBytes();
 		}
 
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		
@@ -98,8 +95,7 @@ public class RPCUtils {
 		if(data != null){
 			decoded = new String(data);
 		}
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		
@@ -116,8 +112,7 @@ public class RPCUtils {
 		
 		encoded = new byte[0];
 
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 				
 		// TODO - END-
 		
@@ -131,8 +126,7 @@ public class RPCUtils {
 		
 		// TODO
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 	}
 
@@ -173,8 +167,7 @@ public class RPCUtils {
 
 		encoded = ByteBuffer.allocate(4).putInt(x).array();
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		
@@ -194,8 +187,7 @@ public class RPCUtils {
 			decoded = ByteBuffer.wrap(data).getInt();
 		}
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		

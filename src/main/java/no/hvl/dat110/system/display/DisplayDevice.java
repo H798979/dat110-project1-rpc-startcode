@@ -1,6 +1,6 @@
 package no.hvl.dat110.system.display;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 import no.hvl.dat110.rpc.RPCServer;
 import no.hvl.dat110.system.controller.Common;
 
@@ -23,8 +23,7 @@ public class DisplayDevice {
 		displayserver.stop();
 		
 				
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		

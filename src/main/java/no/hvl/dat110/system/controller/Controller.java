@@ -1,6 +1,6 @@
 package no.hvl.dat110.system.controller;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 import no.hvl.dat110.rpc.RPCClient;
 import no.hvl.dat110.rpc.RPCClientStopStub;
 
@@ -50,8 +50,7 @@ public class Controller  {
 				e.printStackTrace();
 			}
 			
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		

@@ -1,6 +1,6 @@
 package no.hvl.dat110.messaging;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 
 public class Message {
 
@@ -12,13 +12,12 @@ public class Message {
 		
 		// TODO - START-
 	     
-		if(data.length < 128 && data != null) {       
+		if(data != null && data.length < 128) {
 			this.data = data; 
 		} else {
 			this.data = null;
 		}		
-		if (true)
-			throw new UnsupportedOperationException(TODO.constructor("Message"));
+
 			
 		// TODO - END-
 	}

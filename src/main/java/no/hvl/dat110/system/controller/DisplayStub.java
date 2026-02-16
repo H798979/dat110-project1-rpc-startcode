@@ -1,6 +1,6 @@
 package no.hvl.dat110.system.controller;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 import no.hvl.dat110.rpc.*;
 
 public class DisplayStub extends RPCLocalStub {
@@ -21,8 +21,7 @@ public class DisplayStub extends RPCLocalStub {
 
 		RPCUtils.unmarshallVoid(response);
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 		
 		// TODO - END-
 		

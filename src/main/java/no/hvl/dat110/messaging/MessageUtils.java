@@ -2,13 +2,13 @@ package no.hvl.dat110.messaging;
 
 import java.util.Arrays;
 
-import no.hvl.dat110.TODO;
+//import no.hvl.dat110.TODO;
 
 public class MessageUtils {
 
 	public static final int SEGMENTSIZE = 128;
 
-	public static int MESSAGINGPORT = 8080;
+	public static int MESSAGINGPORT = 7070;
 	public static String MESSAGINGHOST = "localhost";
 
 	public static byte[] encapsulate(Message message) {
@@ -30,8 +30,7 @@ public class MessageUtils {
 			segment[i + 1] = data[i];
 		}
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+
 			
 		// TODO - END
 		return segment;
@@ -45,8 +44,13 @@ public class MessageUtils {
 		// TODO - START-
 		// decapsulate segment and put received payload data into a message
 		
-		if (true)
-			throw new UnsupportedOperationException(TODO.method());
+		int length = segment[0];
+
+		byte[] data= new byte[length];
+
+		System.arraycopy(segment, 1, data, 0, length);
+
+		message = new Message(data);
 		
 		// TODO - END-
 		
